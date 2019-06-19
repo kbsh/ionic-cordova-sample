@@ -1,0 +1,10 @@
+version: '3'
+services:
+  ionic:
+    container_name: ionic_container
+    build: ./docker/node
+    ports:
+      - "0.0.0.0:8100:8100" # ionic dev server
+    tty: true
+    volumes:
+      - "./app:/var/www/app:rw"
