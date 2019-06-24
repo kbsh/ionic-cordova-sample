@@ -8,3 +8,11 @@ services:
     tty: true
     volumes:
       - "./app:/var/www/app:rw"
+  android_build:
+    container_name: android_build_container
+    environment:
+      TZ: "Asia/Tokyo"
+    build: ./docker/android
+    tty: true
+    volumes:
+      - "./app/platforms/android:/data/app:ro"
