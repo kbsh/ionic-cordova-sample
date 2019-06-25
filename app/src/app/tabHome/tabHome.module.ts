@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { TabHomePage } from './tabHome.page';
+import { SearchBarComponent } from '../components/search-bar/search-bar.component';
 
 @NgModule({
   imports: [
@@ -12,6 +13,9 @@ import { TabHomePage } from './tabHome.page';
     FormsModule,
     RouterModule.forChild([{ path: '', component: TabHomePage }])
   ],
-  declarations: [TabHomePage]
+  declarations: [
+    TabHomePage,
+    SearchBarComponent,
+  ]
 })
-export class TabHomePageModule {}
+export class TabHomePageModule { }
