@@ -76,6 +76,14 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
+/** ツールバー **/
+ion-toolbar {
+  --background: var(--ion-color-primary);
+  --border-width: 1px;
+  --border-color: var(--ion-color-dark);
+  --color: var(--ion-color-primary-contrast);
+}
+
 /** タブ 選択時 **/
 .tab-selected {
   --background: var(--ion-color-primary);
