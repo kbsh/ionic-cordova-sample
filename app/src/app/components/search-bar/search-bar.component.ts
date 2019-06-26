@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Suggest } from '../../models/suggest';
+import { SuggestsService } from 'src/app/services/suggests.service';
 
 @Component({
   selector: 'app-search-bar',
@@ -7,8 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SearchBarComponent implements OnInit {
 
-  constructor() { }
+  suggests: Suggest[];
+  input: string;
 
-  ngOnInit() {}
+  constructor(suggestsService: SuggestsService) {
+    this.suggests = suggestsService.getSuggests();
+    this.input = '';
+  }
 
+  ngOnInit() { }
+
+  changeInput(event) {
+    console.log(event.target.value);
+    this.input = event.target.value;
+  }
+
+  clickSuggest(suggest: Suggest) {
+    console.log(suggest);
+  }
 }

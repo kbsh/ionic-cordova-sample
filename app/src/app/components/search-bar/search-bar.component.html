@@ -1,4 +1,10 @@
 <ion-toolbar>
-  <ion-searchbar slot="start" placeholder="キーワードで探す"></ion-searchbar>
+  <ion-searchbar slot="start" placeholder="キーワードで探す" animated (ionChange)="changeInput($event)"></ion-searchbar>
   <ion-button slot="end" color="light">キャンセル</ion-button>
 </ion-toolbar>
+
+<ion-list *ngIf="input.length > 0">
+  <ion-item *ngFor="let suggest of suggests | filter:input" (click)="clickSuggest(suggest)" button>
+    <ion-label>{{ suggest.name }}</ion-label>
+  </ion-item>
+</ion-list>
