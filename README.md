@@ -1,6 +1,12 @@
 # What that
 
-ionic+cordova+firebaseを使った何かサンプル
+ionic4 + cordova + firebaseを使った何かサンプル
+
+### 利用ライブラリ
+
+名称|目的
+---|---
+[RxJS](https://rxjs-dev.firebaseapp.com/)|状態管理
 
 # Need
 
