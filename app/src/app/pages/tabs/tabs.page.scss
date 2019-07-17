@@ -1,1 +1,17 @@
+ion-tab-bar {
+  // FABをはみ出させる
+  contain: none;
+}
 
+ion-fab-button {
+  margin-bottom: 15px;
+
+  ion-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  ion-label {
+    font-size: 11.5px;
+  }
+}
