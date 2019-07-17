@@ -2,11 +2,13 @@
 
 ionic4 + cordova + firebaseを使った何かサンプル
 
-### 利用ライブラリ
+<img src="https://user-images.githubusercontent.com/11205591/61349816-65f06d80-a8a0-11e9-8263-2f258b0228c5.gif" width="300">
 
-名称|目的
+### Use Library
+
+name|purpose
 ---|---
-[RxJS](https://rxjs-dev.firebaseapp.com/)|状態管理
+[RxJS](https://rxjs-dev.firebaseapp.com/)|Reactive, State management.
 
 # Need
 
